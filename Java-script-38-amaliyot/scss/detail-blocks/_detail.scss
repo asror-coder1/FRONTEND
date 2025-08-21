@@ -1,0 +1,141 @@
+.detail {
+}
+.container {
+}
+.detail__out {
+}
+.detail__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail__left {
+  margin-left: auto;
+}
+.detail__left-img {
+}
+.detail__center {
+}
+.detail__center-price {
+  color: #fe7865;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.18px;
+}
+.detail__center-title {
+  max-width: 442px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -1.11px;
+}
+.detail__center-text {
+  max-width: 376px;
+  color: #2c2e3fb2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.detail__center-colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  margin-bottom: 71px;
+}
+.detail__color-label {
+}
+.visually-hidden {
+}
+.detail__color:checked + .detail__color-spp::before {
+  display: block;
+}
+.detail__color-spp {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #7faadb;
+  background-color: #7faadb;
+}
+.detail__color-spp::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: none;
+}
+.detail-spp1 {
+}
+.detail-spp2 {
+  background-color: black;
+  border: 1px solid black;
+}
+.detail-spp3 {
+  background-color: #9ce0d8;
+  border: 1px solid #9ce0d8;
+}
+.detail-spp4 {
+  background-color: #ffb585;
+  border: 1px solid #ffb585;
+}
+.detail__center-add {
+  border: none;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 135px;
+  background-color: #fe7865;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+.detail__center-add::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/arrow-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  top: 20px;
+  left: 130px;
+  transition: all 0.2s linear;
+}
+.detail__center-add:hover::before {
+  left: 230px;
+}
+.detail__right {
+  margin-right: auto;
+}
+.detail__right-img {
+}
+
+.looklike__inner {
+  margin-top: 100px;
+}
+
+.looklike__title {
+  text-align: center;
+  color: #FE7865;
+  margin-bottom: 112px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.18px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User List</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: rgb(255, 0, 170);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    li {
+      padding: 15px;
+      border: 2px solid rgb(255, 0, 170);
+      border-radius: 8px;
+    }
+
+    li:nth-child(even) {
+      background-color: rgb(255, 0, 170);
+    }
+
+    .user p {
+      margin-bottom: 5px;
+    }
+    .user{
+      position: relative;
+    }
+    .remove-btn{
+      background-color: transparent;
+      color: grey;
+      padding: 0;
+      position: absolute;  
+      top: 0;
+      right: 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form class="form">
+    <input type="text" class="inp1" placeholder="Name" required />
+    <input type="number" class="inp2" placeholder="Age" required />
+    <input type="text" class="inp3" placeholder="City" required />
+    <button class="btn" type="submit">Submit</button>
+
+  </form> 
+   
+
+  <ul class="list"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>

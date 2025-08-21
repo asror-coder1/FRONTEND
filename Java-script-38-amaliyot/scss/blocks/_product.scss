@@ -1,0 +1,472 @@
+.product {
+}
+.container {
+}
+.product__out {
+}
+.product__inner {
+  padding-top: 152px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.product__left {
+}
+.product__right-item-btn {
+  border: none;
+  background-color: transparent;
+}
+.product__color-box {
+}
+.product__color-top {
+}
+.product__color-top-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #8f91a3;
+}
+.product__right-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  padding: 0;
+}
+.product__color-top-sp {
+}
+.products__colors {
+}
+.product__color-label {
+}
+.visually-hidden {
+}
+.product__color {
+}
+.product__color-spp {
+}
+.spp1 {
+}
+.spp2 {
+}
+.spp3 {
+}
+.spp4 {
+}
+.spp5 {
+}
+.spp6 {
+}
+.spp7 {
+}
+.spp8 {
+}
+.list {
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+.bg {
+  width: 250px;
+  height: 184px;
+  position: absolute;
+  z-index: -1;
+  margin-top: -27px;
+}
+.item__right {
+}
+.item__img-box {
+  position: relative;
+  border-radius: 10px;
+}
+
+.bg {
+  border-radius: 10px;
+}
+
+.item__img {
+  margin-top: -70px;
+}
+.item__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  width: 116px;
+}
+
+.item__price {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.item__texts {
+  display: flex;
+  justify-content: space-between;
+}
+.item__text {
+  color: #2c2e3fb2;
+  width: 242px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: -0.38px;
+  margin-top: 23px;
+  margin-bottom: 33px;
+}
+.item__btn {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+}
+.item__textss-text {
+  color: #1415177f;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin-top: 6px;
+}
+.product__color-box {
+}
+.product__color-top {
+  display: flex;
+  align-items: center;
+  gap: 142px;
+  border-bottom: 2px solid #e7e8ed;
+  width: 200px;
+  padding-bottom: 10px;
+}
+.product__color-top-text {
+}
+.product__color-top-sp {
+}
+.product__color {
+}
+
+.product__color-spp {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #7faadb;
+  background-color: #7faadb;
+}
+.spp2 {
+  background-color: #fe7865;
+  border: 1px solid #fe7865;
+}
+.spp3 {
+  border: 1px solid #9ce0d8;
+  background-color: #9ce0d8;
+}
+.spp4 {
+  background-color: #ffb585;
+  border: 1px solid #ffb585;
+}
+.spp5 {
+  background-color: #b0e2bb;
+  border: 1px solid #b0e2bb;
+}
+.spp6 {
+  background-color: #bfadef;
+  border: 1px solid #bfadef;
+}
+.spp7 {
+  background-color: #ff8e9c;
+  border: 1px solid #ff8e9c;
+}
+.spp8 {
+  background-color: #fcbdda;
+  border: 1px solid #fcbdda;
+}
+.spp1::before {
+  content: "";
+  position: absolute;
+  background-color: #7faadb;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.spp2::before {
+  content: "";
+  position: absolute;
+  background-color: #fe7865;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.spp3::before {
+  content: "";
+  position: absolute;
+  background-color: #9ce0d8;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.spp4::before {
+  content: "";
+  position: absolute;
+  background-color: #ffb585;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.spp5::before {
+  content: "";
+  position: absolute;
+  background-color: #b0e2bb;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.spp6::before {
+  content: "";
+  position: absolute;
+  background-color: #bfadef;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.spp7::before {
+  content: "";
+  position: absolute;
+  background-color: #ff8e9c;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.spp8::before {
+  content: "";
+  position: absolute;
+  background-color: #fcbdda;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+
+.products__colors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 200px;
+  gap: 45px;
+  margin-top: 32px;
+}
+.product__color:checked + .product__color-spp {
+  background-color: transparent;
+}
+.product__color:checked + .product__color-spp::before {
+  display: block;
+}
+.product__color:checked + .spp2 {
+  background-color: transparent;
+}
+.product__color:checked + .spp2::before {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.product__filter-top {
+  display: flex;
+  align-items: center;
+  gap: 142px;
+  border-bottom: 2px solid #e7e8ed;
+  padding-bottom: 10px;
+  margin-top: 96px;
+}
+.product__filter-top-text {
+  color: #8f91a3;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.product__filter-top-sp {
+}
+
+.product__filter-box {
+}
+.product__filter-top {
+}
+.product__filter-top-text {
+}
+.product__filter-top-sp {
+}
+.product__filter-newbtn {
+  border: none;
+  background-color: transparent;
+  margin-top: 32px;
+  margin-bottom: 23px;
+}
+.product__filter-materials {
+}
+.product__filter-materials-text {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.product__filter-materials-lbbox {
+  margin-left: 24px;
+}
+.product__filter-label {
+  max-width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.visually-hidden {
+}
+.filter__color {
+}
+.filter__color-sppp {
+  color: #14151798;
+}
+.sppp1 {
+}
+.filter__color-spp {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #14151798;
+  position: relative;
+}
+
+.filter__color-spp::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/Green-checkmark-with-rounded-ends.svg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  left: 1px;
+  display: none;
+}
+
+.filter__color:checked ~ .filter__color-spp::before {
+  display: block;
+}
+.fspp1 {
+}
+.sppp2 {
+}
+.fspp2 {
+}
+.sppp3 {
+}
+.fspp3 {
+}
+.sppp4 {
+}
+.fspp4 {
+}
+.sppp5 {
+}
+.fspp5 {
+}
+.sppp6 {
+}
+.fspp6 {
+}
+.sppp7 {
+}
+.fspp7 {
+}
+.sppp8 {
+}
+.fspp8 {
+}
+.sppp9 {
+}
+.fspp9 {
+}
+.sppp10 {
+}
+.fspp10 {
+}
+.product__filter-btnn {
+  border: none;
+  background-color: transparent;
+  margin-top: 24px;
+}
+
+.product__price-box {
+  margin-top: 96px;
+}
+.product__price-top {
+  display: flex;
+  align-items: center;
+  gap: 142px;
+  border-bottom: 2px solid #e7e8ed;
+  padding-bottom: 10px;
+}
+.product__price-top-text {
+  color: #8f91a3;
+}
+.product__price-top-texts {
+}

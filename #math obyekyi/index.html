@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doira Hisoblash</title>
+</head>
+<body>
+    <h1>Doira Yuzasi va Uzunligini Hisoblash</h1>
+    <button onclick="hisobla()">Doira Hisoblash</button>
+    <div id="natija"></div>
+
+    <script>
+        function hisobla() {
+            // Tasodifiy radiusni olish
+            let radius = Math.random() * 100;
+            radius = radius.toFixed(2); // 2 xonaga yaxlitlash
+            
+            // Yuzani hisoblash
+            let yuzasi = Math.PI * Math.pow(radius, 2);
+            yuzasi = yuzasi.toFixed(2); // 2 xonaga yaxlitlash
+            
+            // Uzunlikni hisoblash
+            let uzunligi = 2 * Math.PI * radius;
+            uzunligi = uzunligi.toFixed(2); // 2 xonaga yaxlitlash
+
+            // Natijani ko'rsatish
+            document.getElementById("natija").innerHTML = `
+                Radius: ${radius} <br>
+                Yuzasi: ${yuzasi} <br>
+                Uzunligi: ${uzunligi}
+            `;
+        }
+    </script>
+</body>
+</html>

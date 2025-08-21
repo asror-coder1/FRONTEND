@@ -1,0 +1,12 @@
+.wrapper{
+    display: flex;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    border:1px solid gray;
+    padding: 80px;
+    align-items: center;
+    gap: 10px;
+}
+

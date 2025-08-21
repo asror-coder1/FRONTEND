@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: aqua;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+input {
+  background-color: antiquewhite;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 15px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(49, 213, 57);
+}
+
+.weather__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.city__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.city__temp,
+.city__wind {
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+.city-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.city-list li {
+  background-color: #a5a0c9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.city-list li:hover {
+  background-color: #e61010;
+}
+
+.city-list button {
+  margin: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+}
+
+.bi-heart,
+.bi-heart-fill {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: red;
+}
+
+.favorite-list {
+  margin-top: 10px;
+}
+
+.favorite-list li {
+  list-style-type: disc;
+  margin-left: 20px;
+}

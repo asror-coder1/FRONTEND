@@ -1,0 +1,157 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script src="APP.JS"></Script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalkulyator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+    .calculator {
+      width: 260px;
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    .display {
+      background: black;
+      color: #00f0ff;
+      text-align: right;
+      padding: 20px;
+      font-size: 30px;
+      height: 60px;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    button {
+      padding: 20px;
+      font-size: 20px;
+      border: 1px solid #333;
+      background: #2e2e3f;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #3e3e5e;
+    }
+    .equal {
+      background: #00c9a7;
+      color: white;
+      grid-column: span 2;
+    }
+    .zero {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div id="display" class="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="appendOperator('/')">÷</button>
+      <button onclick="backspace()">⌫</button>
+      <button onclick="appendOperator('*')">×</button>
+
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendOperator('-')">-</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendOperator('+')">+</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button class="equal" onclick="calculate()">=</button>
+
+      <button class="zero" onclick="appendNumber('0')">0</button>
+      <button onclick="appendDot('.')">.</button>
+    </div>
+  </div>
+
+  <script>
+    let display = document.getElementById('display');
+    let currentInput = '';
+    let resultShown = false;
+
+    function updateDisplay() {
+      display.innerText = currentInput === '' ? '0' : currentInput;
+    }
+
+    function appendNumber(num) {
+      if (resultShown) {
+        currentInput = '';
+        resultShown = false;
+      }
+      currentInput += num;
+      updateDisplay();
+    }
+
+    function appendOperator(op) {
+      if (currentInput === '') return;
+      const lastChar = currentInput.slice(-1);
+      if ("+-*/".includes(lastChar)) {
+        currentInput = currentInput.slice(0, -1) + op;
+      } else {
+        currentInput += op;
+      }
+      updateDisplay();
+    }
+
+    function appendDot(dot) {
+      const parts = currentInput.split(/[\+\-\*\/]/);
+      const lastPart = parts[parts.length - 1];
+      if (!lastPart.includes(dot)) {
+        currentInput += dot;
+        updateDisplay();
+      }
+    }
+
+    function calculate() {
+      try {
+        currentInput = eval(currentInput).toString();
+        updateDisplay();
+        resultShown = true;
+      } catch {
+        display.innerText = 'Xato!';
+        resultShown = true;
+      }
+    }
+
+    function clearDisplay() {
+      currentInput = '';
+      updateDisplay();
+    }
+
+    function backspace() {
+      currentInput = currentInput.slice(0, -1);
+      updateDisplay();
+    }
+  </script>
+</body>
+</html>

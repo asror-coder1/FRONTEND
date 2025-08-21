@@ -1,0 +1,20 @@
+header {
+  padding: 40px 0;
+}
+
+.header__wrapper {
+  @include d-flex(0, space-between);
+
+  .header__items {
+    @include d-flex(20px, center);
+
+    .header__link {
+      @include font();
+    }
+  }
+
+  .header__icons {
+    @include d-flex(20px, center);
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,126 @@
+.products {
+  margin: 100px 0;
+}
+
+.products__wrapper {
+  @include d-flex(0);
+}
+
+.products__box {
+  width: 80%;
+}
+.products__sorts {
+  @include d-flex(30px, center);
+}
+.products__sort {
+  @include font($primary-color, 20px);
+  cursor: pointer;
+}
+
+.products__all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product {
+  @include d-flex(10px);
+}
+.product__img {
+  position: relative;
+  img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    z-index: 1;
+    position: relative;
+  }
+  .bg {
+    position: absolute;
+    top: 60px;
+    height: 180px;
+    background-color: aqua;
+    width: 100%;
+    z-index: 0;
+  }
+}
+.product__info {
+  padding: 20px;
+  position: relative;
+}
+.product__title {
+  @include font($primary-color, 18px, 500);
+}
+.product__price {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  @include font($primary-color, 20px, 500);
+}
+.delivery__time {
+  @include font($text-color, 12px, 300);
+  margin: 6px 0 23px;
+}
+.product__about {
+  @include font($text-color, 14px, 400);
+  margin-bottom: 30px;
+}
+
+.product__buy {
+  border: none;
+  background-color: transparent;
+  @include font($primary-color, 12px, 900);
+}
+
+.products__filter {
+  width: 20%;
+}
+
+.products__color {
+}
+.color__title {
+  @include d-flex(0, space-between);
+  @include font($text-color, 20px, 300);
+  border-bottom: 2px solid $text-color;
+  padding-bottom: 10px;
+}
+.bi {
+}
+.bi-dash {
+  cursor: pointer;
+  font-size: 24px;
+}
+.color__radios {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: center;
+  label {
+    text-align: center;
+  }
+}
+
+.input-controller {
+  display: inline-block;
+  padding: 10px;
+  background-color: #7faadb;
+  border-radius: 100%;
+  transition: 0.3s;
+  position: relative;
+}
+
+.input-color:checked ~ .input-controller {
+  background-color: #fff;
+  border: 2px solid #7faadb;
+}
+
+.input-color:checked ~ .input-controller::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #7faadb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}

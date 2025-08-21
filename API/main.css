@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container div {
+  background: #ebe599;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px 24px;
+  margin: 24px auto;
+  max-width: 420px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #0f1419;
+  border: 1px solid #153e5b;
+  width: 370px;
+}
+
+.container h3 {
+  font-size: 1.1rem;
+  font-size: 4 px;
+  margin: 0 0 8px 0;
+}
+
+.container p {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #536471;
+}

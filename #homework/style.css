@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.films__wrapper{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.film{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    gap: 20px;
+    background-color: rgb(22, 22, 145);
+    color: white;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .title{
+        color: red;
+    }
+}

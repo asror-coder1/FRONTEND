@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title"></h1>
+    <label for="start">Start index</label>
+    <input type="number" id="start" />
+    <br />
+    <label for="end">End index/count delete</label>
+    <input type="number" id="end" />
+    <br />
+    <label class="add__label" for="add"
+      >New value
+      <input type="number" name="" id="add" />
+    </label>
+    <br /><br />
+    <label for="">Select method</label>
+    <select id="method">
+      <option value="slice">Slice</option>
+      <option value="splice">Splice</option>
+    </select>
+    <br />
+    <p class="result"></p>
+    <br />
+    <button class="run">Run</button>
+    
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

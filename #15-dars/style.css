@@ -1,0 +1,7 @@
+.todo-item{
+padding: 10px 30px;
+background-color: aqua;
+border-radius: 10px;
+border: 1px solid aqua;
+margin-top: 10px;
+cursor: pointer;
